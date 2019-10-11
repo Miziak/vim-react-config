@@ -84,7 +84,8 @@ function! s:select_current_word()
   endif
   return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
 endfunc
-nmap <expr> <silent> gb <SID>select_current_word()
+nnoremap <expr> <silent> <C-m> <SID>select_current_word()
+xmap <silent> <C-m> <Plug>(coc-cursors-range)
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert

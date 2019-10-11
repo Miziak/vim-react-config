@@ -1,6 +1,6 @@
 " hardtime
 let g:hardtime_default_on = 1
-let g:hardtime_ignore_buffer_patterns = [ "NERD.*", ".git/index" ]
+let g:hardtime_ignore_buffer_patterns = [ 'NERD.*', '.git/index' ]
 
 " indentline
 let g:indentLine_enabled = 1
@@ -13,7 +13,7 @@ let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 let g:UltiSnipsExpandTrigger = '<C-e>'
 let g:UltiSnipsJumpForwardTrigger = '<C-n>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-p>'
-let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsEditSplit='vertical'
 
 " comfortable motion
 let g:comfortable_motion_no_default_key_mappings = 1
@@ -27,3 +27,13 @@ command! -bang -nargs=* Rg
   \   'rg --column --no-heading --color=always --smart-case --glob "!package-lock.json" --glob "!package.json" '.shellescape(<q-args>), 1,
   \   {'options': '--delimiter : --nth 4..'},
   \   <bang>0)
+
+" coc
+let g:coc_global_extensions = [
+      \'coc-tsserver',
+      \'coc-eslint',
+      \'coc-json',
+      \'coc-prettier',
+      \'coc-css',
+      \'coc-pairs'
+      \]
