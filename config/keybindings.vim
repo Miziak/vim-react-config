@@ -36,6 +36,18 @@ nnoremap <ScrollWheelDown> <nop>
 inoremap <ScrollWheelUp> <nop>
 inoremap <ScrollWheelDown> <nop>
 
+" maximize window
+function! s:ZoomToggle() abort
+  if exists('t:zoomed') && t:zoomed
+    close
+    let t:zoomed = 0
+  else
+    tabe %
+    let t:zoomed = 1
+  endif
+endfunction
+nnoremap <silent> <leader>m :call s:ZoomToggle()
+
 " map keys for comfortable motion plugin
 nnoremap <silent> <C-d> :call comfortable_motion#flick(100)<CR>
 nnoremap <silent> <C-u> :call comfortable_motion#flick(-100)<CR>
