@@ -54,7 +54,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
   Plug 'ryanoasis/vim-devicons'
 
   " plugin for startup page
-  " Plug 'mhinz/vim-startify'
+  Plug 'mhinz/vim-startify'
 
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
   " plugin enable syntax highlight for jsx in files
