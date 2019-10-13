@@ -28,6 +28,9 @@ command! -bang -nargs=* Rg
   \   {'options': '--delimiter : --nth 4..'},
   \   <bang>0)
 
+" vim-maximizer
+let g:maximizer_default_mapping_key = '<leader>m'
+
 " coc
 let g:coc_global_extensions = [
       \'coc-tsserver',

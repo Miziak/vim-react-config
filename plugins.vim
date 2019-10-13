@@ -56,6 +56,9 @@ call plug#begin('$HOME/.config/nvim/plugged')
   " plugin for startup page
   Plug 'mhinz/vim-startify'
 
+  " plugin maximize and restore splits
+  Plug 'szw/vim-maximizer'
+
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
   " plugin enable syntax highlight for jsx in files
   Plug 'MaxMEllon/vim-jsx-pretty'
