@@ -6,5 +6,11 @@
   "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript"],
   "diagnostic.errorSign": "##",
   "diagnostic.warningSign": "!!",
-  "diagnostic.infoSign": "ii"
+  "diagnostic.infoSign": "ii",
+  "languageserver": {
+    "reason": {
+      "command": "~/.rls-linux/reason-language-server",
+      "filetypes": ["reason"]
+    }
+  }
 }

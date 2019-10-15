@@ -77,4 +77,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
   
   " plugin add CSS3 rulse support for styled-components
   Plug 'hail2u/vim-css3-syntax'
+
+  " plugin for reasonml
+  Plug 'reasonml-editor/vim-reason-plus'
 call plug#end() 
