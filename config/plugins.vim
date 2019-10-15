@@ -1,12 +1,17 @@
 " hardtime
 let g:hardtime_default_on = 1
 let g:hardtime_ignore_buffer_patterns = [ 'NERD.*', '.git/index' ]
+let g:hardtime_ignore_quickfix = 1
 
 " indentline
 let g:indentLine_enabled = 1
 
 " airline theme
-let g:airline_theme='monokai_tasty'
+" let g:airline_theme='monokai_tasty'
+" alt theme
+let g:oceanic_next_terminal_bold = 1
+let g:oceanic_next_terminal_italic = 1
+let g:airline_theme='oceanicnext'
 
 " ultisnips
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
@@ -42,7 +47,7 @@ let g:coc_global_extensions = [
       \]
 
 " startify
-let g:startify_change_to_dir = 1
+let g:startify_change_to_dir = 0
 let g:startify_custom_header = [
   \'',
   \'',

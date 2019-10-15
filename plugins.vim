@@ -3,6 +3,9 @@ call plug#begin('$HOME/.config/nvim/plugged')
   " nice monokai colorsheme
   Plug 'patstockwell/vim-monokai-tasty'
 
+  " alt theme
+  Plug 'mhartington/oceanic-next'
+
   " plugin for easy comments
   Plug 'tomtom/tcomment_vim'
 

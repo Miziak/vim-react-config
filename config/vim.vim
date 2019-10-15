@@ -8,7 +8,8 @@ endif
 
 " enable syntax highlighting
 syntax enable
-colorscheme vim-monokai-tasty
+" colorscheme vim-monokai-tasty
+colorscheme OceanicNext
 
 " highlight line under cursor
 set cursorline
@@ -50,5 +51,5 @@ set signcolumn=yes
 let mapleader = ','
 
 " possible fix for long styled-components files
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+" autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+" autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear

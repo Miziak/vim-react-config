@@ -13,11 +13,6 @@ nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
-" for osx
-nnoremap ∆ :m .+1<CR>==
-nnoremap Ż :m .-2<CR>==
-vnoremap ∆ :m '>+1<CR>gv=gv
-vnoremap Ż :m '<-2<CR>gv=gv
 
 " map keys for yank and paste over system clipboard
 nmap gp "+p
@@ -36,17 +31,8 @@ nnoremap <ScrollWheelDown> <nop>
 inoremap <ScrollWheelUp> <nop>
 inoremap <ScrollWheelDown> <nop>
 
-" maximize window
-function! s:ZoomToggle() abort
-  if exists('t:zoomed') && t:zoomed
-    close
-    let t:zoomed = 0
-  else
-    tabe %
-    let t:zoomed = 1
-  endif
-endfunction
-nnoremap <silent> <leader>m :call s:ZoomToggle()
+" restore <CR> keybinding in quickfix window overwritten by coc multicursors
+autocmd FileType qf nnoremap <buffer> <CR> <CR>
 
 " map keys for comfortable motion plugin
 nnoremap <silent> <C-d> :call comfortable_motion#flick(100)<CR>
@@ -64,9 +50,6 @@ nnoremap <C-b> :Buffers<CR>
 nnoremap <C-f> :Rg<CR>
 nnoremap <A-f> :Rg <C-r><C-w><CR>
 vnoremap <A-f> "vy:Rg <C-r>v<CR>
-" for osx
-nnoremap ń :Rg <C-r><C-w><CR>
-vnoremap ń "vy:Rg <C-r>v<CR>
 
 " coc
 " map key to trigger code completion
@@ -84,7 +67,7 @@ function! s:select_current_word()
   endif
   return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
 endfunc
-nnoremap <expr> <silent> <C-m> <SID>select_current_word()
+nmap <expr> <silent> <C-m> <SID>select_current_word()
 xmap <silent> <C-m> <Plug>(coc-cursors-range)
 
 " fugitive
