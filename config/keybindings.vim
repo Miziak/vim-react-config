@@ -31,6 +31,9 @@ nnoremap <ScrollWheelDown> <nop>
 inoremap <ScrollWheelUp> <nop>
 inoremap <ScrollWheelDown> <nop>
 
+" maximize window remap
+map <silent> <leader>m <C-w>o
+
 " restore <CR> keybinding in quickfix window overwritten by coc multicursors
 autocmd FileType qf nnoremap <buffer> <CR> <CR>
 

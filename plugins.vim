@@ -60,7 +60,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
   Plug 'mhinz/vim-startify'
 
   " plugin maximize and restore splits
-  Plug 'szw/vim-maximizer'
+  Plug 'troydm/zoomwintab.vim'
 
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
   " plugin enable syntax highlight for jsx in files
