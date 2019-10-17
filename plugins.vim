@@ -45,6 +45,9 @@ call plug#begin('$HOME/.config/nvim/plugged')
   " plugin provide powerful intellisense engine and language servers support
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
 
+  " plugin for multicursor
+  Plug 'terryma/vim-multiple-cursors'
+
   " === OTHER PLUGINS === "
   " plugin disable repeat hjkl motions to optimize workflow by force usting
   " 'bigger' motions like w, e, b, B

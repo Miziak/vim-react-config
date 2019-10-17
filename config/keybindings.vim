@@ -63,15 +63,6 @@ nmap <silent><leader>dvv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent><leader>dx :call CocAction('jumpDefinition', 'split')<CR>
 " map key for find references
 nmap <silent><leader>r <Plug>(coc-references)
-" map key and function for multiple cursors
-function! s:select_current_word()
-  if !get(g:, 'coc_cursors_activated', 0)
-    return "\<Plug>(coc-cursors-word)"
-  endif
-  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
-endfunc
-nmap <expr> <silent> <C-m> <SID>select_current_word()
-xmap <silent> <C-m> <Plug>(coc-cursors-range)
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert
