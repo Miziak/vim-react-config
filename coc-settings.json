@@ -3,7 +3,8 @@
   "suggest.maxCompleteItemCount": 10,
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript"],
+  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "diagnostic.errorSign": "##",
   "diagnostic.warningSign": "!!",
   "diagnostic.infoSign": "ii",
@@ -12,5 +13,7 @@
       "command": "~/.rls-linux/reason-language-server",
       "filetypes": ["reason"]
     }
-  }
+  },
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true
 }

@@ -65,12 +65,17 @@ call plug#begin('$HOME/.config/nvim/plugged')
   " plugin maximize and restore splits
   Plug 'troydm/zoomwintab.vim'
 
+  Plug 'vim-scripts/ReplaceWithRegister'
+
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
   " plugin enable syntax highlight for jsx in files
   Plug 'MaxMEllon/vim-jsx-pretty'
   
   " plugin provide better highlight for es6 javascript
   Plug 'othree/yajs.vim'
+
+  " plugin provide typescript support
+  Plug 'HerringtonDarkholme/yats.vim'
 
   " plugin add syntax highlight for some js libraries
   Plug 'othree/javascript-libraries-syntax.vim'
@@ -80,6 +85,9 @@ call plug#begin('$HOME/.config/nvim/plugged')
   
   " plugin add CSS3 rulse support for styled-components
   Plug 'hail2u/vim-css3-syntax'
+
+  " plugin for unittesting
+  Plug 'janko/vim-test'
 
   " plugin for reasonml
   Plug 'reasonml-editor/vim-reason-plus'
