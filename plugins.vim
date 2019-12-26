@@ -26,7 +26,7 @@ call plug#begin('$HOME/.config/nvim/plugged')
   Plug 'tpope/vim-fugitive'
 
   " plugin for sippets engine
-  Plug 'SirVer/ultisnips'
+  " Plug 'SirVer/ultisnips'
 
   " plugin enchance powerful vim repeat feature to repeat plugins motions and
   " actions

@@ -1,5 +1,7 @@
 " default shell for vim
-set shell=/bin/sh
+if !has('win32')
+	set shell=/bin/sh
+endif
 
 " set colors when it is possible
 if (has("termguicolors"))
