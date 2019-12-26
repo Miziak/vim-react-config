@@ -31,6 +31,9 @@ nnoremap <ScrollWheelDown> <nop>
 inoremap <ScrollWheelUp> <nop>
 inoremap <ScrollWheelDown> <nop>
 
+" esc in normal mode also clear search
+nnoremap <silent> <Esc> :nohl <Esc>
+
 " maximize window remap
 map <silent> <leader>m <C-w>o
 
@@ -63,6 +66,7 @@ nmap <silent><leader>dvv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <silent><leader>dx :call CocAction('jumpDefinition', 'split')<CR>
 " map key for find references
 nmap <silent><leader>r <Plug>(coc-references)
+nmap <silent><leader>h :CocHover<CR>
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert
