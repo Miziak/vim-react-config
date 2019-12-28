@@ -1,11 +1,12 @@
-" default shell for vim
-if !has('win32')
-	set shell=/bin/sh
+" set gui options if runnibg in gui
+if has('nvim') && exists('g:GuiLoaded')
+  set guifont=Fira\ Code:h10
+  set notermguicolors
 endif
 
 " set colors when it is possible
-if (has("termguicolors"))
- set termguicolors
+if has("termguicolors")
+    set termguicolors
 endif
 
 " enable syntax highlighting
@@ -33,6 +34,9 @@ set fileencodings=utf8
 " set line numbering to relative
 set number
 set relativenumber
+
+" open splits on right
+set splitright
 
 " disable mouse
 set mouse=

@@ -15,5 +15,11 @@
     }
   },
   "typescript.suggest.autoImports": true,
-  "javascript.suggest.autoImports": true
+  "javascript.suggest.autoImports": true,
+  "snippets.userSnippetsDirectory": "$XDG_CONFIG_HOME/nvim/snippets",
+  "explorer.icon.enableNerdfont": true,
+  "explorer.buffer.columns": [],
+  "explorer.keyMappings": {
+    "s": "openInVsplit"
+  }
 }

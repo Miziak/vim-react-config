@@ -67,6 +67,9 @@ nmap <silent><leader>dx :call CocAction('jumpDefinition', 'split')<CR>
 " map key for find references
 nmap <silent><leader>r <Plug>(coc-references)
 nmap <silent><leader>h :CocHover<CR>
+" map snippet keys
+imap <C-e> <Plug>(coc-snippets-expand)
+map <leader>n :CocCommand explorer<CR>
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert
@@ -83,10 +86,6 @@ function! s:ToggleBlame()
     endif
 endfunction
 nnoremap <leader>b :call <SID>ToggleBlame()<CR>
-
-" NERDTree
-map <leader>n :NERDTreeToggle<CR>
-map <leader>N :NERDTreeFind<CR>
 
 " macro records
 " log variable under cursor

@@ -1,6 +1,6 @@
 " hardtime
 let g:hardtime_default_on = 1
-let g:hardtime_ignore_buffer_patterns = [ 'NERD.*', '.git/index' ]
+let g:hardtime_ignore_buffer_patterns = [ '.git[\\/]index'  ]
 let g:hardtime_ignore_quickfix = 1
 
 " indentline
@@ -12,13 +12,6 @@ let g:indentLine_enabled = 1
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
 let g:airline_theme='oceanicnext'
-
-" ultisnips
-let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
-let g:UltiSnipsExpandTrigger = '<C-e>'
-let g:UltiSnipsJumpForwardTrigger = '<C-n>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-p>'
-let g:UltiSnipsEditSplit='vertical'
 
 " comfortable motion
 let g:comfortable_motion_no_default_key_mappings = 1
@@ -62,7 +55,9 @@ let g:coc_global_extensions = [
       \'coc-json',
       \'coc-prettier',
       \'coc-css',
-      \'coc-pairs'
+      \'coc-pairs',
+      \'coc-snippets',
+      \'coc-explorer'
       \]
 
 " startify
