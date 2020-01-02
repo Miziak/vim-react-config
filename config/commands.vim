@@ -4,3 +4,4 @@ command! Econf :tabe $MYVIMRC
 command! Soconf :so $MYVIMRC
 
 command! CocHover :call CocAction('doHover')
+command! CocSnippets :CocCommand snippets.editSnippets

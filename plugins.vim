@@ -77,7 +77,4 @@ call plug#begin()
 
   " plugin for unittesting
   Plug 'janko/vim-test'
-
-  " plugin for reasonml
-  Plug 'reasonml-editor/vim-reason-plus'
 call plug#end() 
