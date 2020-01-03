@@ -55,6 +55,7 @@ set signcolumn=yes
 
 " set leader key
 let mapleader = ','
+let maplocalleader = ','
 
 " possible fix for long styled-components files
 " autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

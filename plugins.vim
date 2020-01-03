@@ -7,6 +7,9 @@ call plug#begin()
   " alt theme
   Plug 'mhartington/oceanic-next'
 
+  " plugin for programming languages support
+  Plug 'sheerun/vim-polyglot'
+
   " plugin for easy comments
   Plug 'tomtom/tcomment_vim'
 
@@ -63,15 +66,7 @@ call plug#begin()
   " plugin maximize and restore splits
   Plug 'troydm/zoomwintab.vim'
 
-  Plug 'vim-scripts/ReplaceWithRegister'
-
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
-  " plugin enable syntax highlight for jsx in files
-  Plug 'MaxMEllon/vim-jsx-pretty'
-  
-  " plugin for programming languages support
-  Plug 'sheerun/vim-polyglot'
-
   " plugin enable syntax highlight for styled-components
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   
