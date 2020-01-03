@@ -15,6 +15,9 @@ call plug#begin()
 
   " plugin add actions for serrounding text obiects
   Plug 'tpope/vim-surround'
+  
+  " plugin to easy replace textobj width register
+  Plug 'inkarkat/vim-ReplaceWithRegister'
 
   " plugin add line under buffer providing info about files
   Plug 'vim-airline/vim-airline'
