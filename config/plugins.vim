@@ -60,7 +60,8 @@ let g:coc_global_extensions = [
   \'coc-pairs',
   \'coc-snippets',
   \'coc-explorer',
-  \'coc-styled-components'
+  \'coc-styled-components',
+  \'coc-emoji'
   \]
 
 " startify

@@ -34,6 +34,10 @@ inoremap <ScrollWheelDown> <nop>
 " esc in normal mode also clear search
 nnoremap <silent> <Esc> :nohl <Esc>
 
+" map jk and kj to esc
+inoremap <silent> jk <C-o>:nohl<CR><Esc>
+inoremap <silent> kj <C-o>:nohl<CR><Esc>
+
 " maximize window remap
 map <silent> <leader>m <C-w>o
 
