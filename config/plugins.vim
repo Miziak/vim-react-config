@@ -44,11 +44,13 @@ endfunction
 let $FZF_DEFAULT_COMMAND='rg -l ""'
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 " custom rg command for exclude node specific stuff
-command! -bang -nargs=* Rg
-  \call fzf#vim#grep(
-  \'rg --column --no-heading --color=always --smart-case --glob "!package-lock.json" --glob "!package.json" '.shellescape(<q-args>), 1,
-  \{'options': '--delimiter : --nth 4..'},
-  \<bang>0)
+command! -bang -nargs=* Rg call fzf#vim#grep(
+  \  "rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>),
+  \  1,
+  \  {'options': '--delimiter : --nth 4..'},
+  \  <bang>0
+  \)
+" command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " coc
 let g:coc_global_extensions = [
