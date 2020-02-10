@@ -1,6 +1,6 @@
 " hardtime
 let g:hardtime_default_on = 1
-let g:hardtime_ignore_buffer_patterns = [ '.git[\\/]index'  ]
+let g:hardtime_ignore_buffer_patterns = [ 'NERD.*', '.git[\\/]index'  ]
 let g:hardtime_ignore_quickfix = 1
 
 " indentline
@@ -13,7 +13,7 @@ let g:indentLine_fileTypeExclude = ['startify']
 " alt theme
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
-let g:airline_theme='oceanicnext'
+let g:airline_theme='gruvbox'
 
 " comfortable motion
 let g:comfortable_motion_no_default_key_mappings = 1
@@ -61,7 +61,6 @@ let g:coc_global_extensions = [
   \'coc-css',
   \'coc-pairs',
   \'coc-snippets',
-  \'coc-explorer',
   \'coc-styled-components',
   \'coc-emoji'
   \]

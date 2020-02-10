@@ -12,7 +12,8 @@ endif
 " enable syntax highlighting
 syntax enable
 " colorscheme vim-monokai-tasty
-colorscheme OceanicNext
+colorscheme gruvbox
+let g:gruvbox_contrast_dark='medium'
 
 " highlight line under cursor
 set cursorline

@@ -38,6 +38,9 @@ nnoremap <silent> <Esc> :nohl <Esc>
 inoremap <silent> jk <C-o>:nohl<CR><Esc>
 inoremap <silent> kj <C-o>:nohl<CR><Esc>
 
+" nerdtree open
+map <leader>n :NERDTreeFind<CR>
+
 " maximize window remap
 map <silent> <leader>m <C-w>o
 
@@ -73,7 +76,6 @@ nmap <silent><leader>r <Plug>(coc-references)
 nmap <silent><leader>h :CocHover<CR>
 " map snippet keys
 imap <C-e> <Plug>(coc-snippets-expand)
-map <leader>n :CocCommand explorer<CR>
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert

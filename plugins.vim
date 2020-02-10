@@ -5,7 +5,10 @@ call plug#begin()
   " Plug 'patstockwell/vim-monokai-tasty'
 
   " alt theme
-  Plug 'mhartington/oceanic-next'
+  " Plug 'mhartington/oceanic-next'
+  
+  " yet another theme
+  Plug 'morhetz/gruvbox'
 
   " plugin for programming languages support
   Plug 'sheerun/vim-polyglot'
@@ -48,6 +51,9 @@ call plug#begin()
 
   " plugin for multicursor
   Plug 'terryma/vim-multiple-cursors'
+
+  " file explorer plugin
+  Plug 'preservim/nerdtree'
 
   " === OTHER PLUGINS === "
   " plugin disable repeat hjkl motions to optimize workflow by force usting
