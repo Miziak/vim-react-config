@@ -55,6 +55,8 @@ call plug#begin()
   " file explorer plugin
   Plug 'preservim/nerdtree'
 
+  Plug 'unblevable/quick-scope'
+
   " === OTHER PLUGINS === "
   " plugin disable repeat hjkl motions to optimize workflow by force usting
   " 'bigger' motions like w, e, b, B
@@ -75,6 +77,7 @@ call plug#begin()
   " === JAVASCRIPT DEVELOPMENT PLUGINS === "
   " plugin enable syntax highlight for styled-components
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'jonsmithers/vim-html-template-literals'
   
   " plugin add CSS3 rulse support for styled-components
   Plug 'hail2u/vim-css3-syntax'

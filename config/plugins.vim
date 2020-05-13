@@ -102,3 +102,6 @@ let test#neovim#term_position = "belowright"
 let test#javascript#jest#options = {
   \ 'all':   '--config=jest.config.json',
   \}
+
+" vim-quickscope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

@@ -1,3 +1,6 @@
+" disable ex mode
+map Q <nop>
+
 " map keys for move over code completion
 inoremap <C-j> <C-n>
 inoremap <C-k> <C-p>
@@ -35,6 +38,7 @@ inoremap <ScrollWheelDown> <nop>
 nnoremap <silent> <Esc> :nohl <Esc>
 
 " map jk and kj to esc
+inoremap <Esc> <nop>
 inoremap <silent> jk <C-o>:nohl<CR><Esc>
 inoremap <silent> kj <C-o>:nohl<CR><Esc>
 
@@ -79,7 +83,7 @@ imap <C-e> <Plug>(coc-snippets-expand)
 
 " fugitive
 " remap cc in commit message buffer to clear message and go to insert
-autocmd FileType gitcommit nnoremap <buffer>cc cG
+autocmd FileType gitcommit nnoremap <buffer>cc dG
 " key mappings for take solutions from diff
 nnoremap <leader>dh :diffget //2<CR>
 nnoremap <leader>dl :diffget //3<CR>
@@ -96,3 +100,23 @@ nnoremap <leader>b :call <SID>ToggleBlame()<CR>
 " macro records
 " log variable under cursor
 nmap <leader>l yiwoconsole.log(<esc>p<esc>
+
+" calculate rem's keybinding
+function PxToRem()
+  normal! "syiw
+  let @s = trim(system("echo ".getreg("s")."/16 | node -p"))."rem"
+  normal! viw"sp
+endfunction
+
+nmap <leader>r :call PxToRem()<CR>
+
+function ConventionalCommitGen(type)
+  execute "normal! a" . a:type . ": | [" . trim(system("git rev-parse --abbrev-ref HEAD")) . "]\<esc>F|x"
+  startinsert
+endfunction
+
+nmap <leader>gf :call ConventionalCommitGen("feat")<CR>
+nmap <leader>gb :call ConventionalCommitGen("fix")<CR>
+nmap <leader>gh :call ConventionalCommitGen("chore")<CR>
+nmap <leader>gr :call ConventionalCommitGen("refactor")<CR>
+nmap <leader>gt :call ConventionalCommitGen("test")<CR>
