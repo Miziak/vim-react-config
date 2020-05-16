@@ -16,9 +16,6 @@ call plug#begin()
   " plugin for easy comments
   Plug 'tomtom/tcomment_vim'
 
-  " plugin show indentation lines
-  Plug 'Yggdroot/indentLine'
-
   " plugin add actions for serrounding text obiects
   Plug 'tpope/vim-surround'
   

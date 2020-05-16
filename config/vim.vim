@@ -1,9 +1,3 @@
-" set gui options if runnibg in gui
-if has('nvim') && exists('g:GuiLoaded')
-  set guifont=Fira\ Code:h10
-  set notermguicolors
-endif
-
 " set colors when it is possible
 if has("termguicolors")
     set termguicolors
@@ -14,7 +8,9 @@ syntax enable
 " colorscheme vim-monokai-tasty
 colorscheme gruvbox
 let g:gruvbox_contrast_dark='medium'
-hi Normal guibg=NONE ctermbg=NONE
+if !has('win32')
+  hi Normal guibg=NONE ctermbg=NONE
+endif
 
 " highlight line under cursor
 set cursorline
