@@ -17,6 +17,11 @@ syntax enable
 " colorscheme vim-monokai-tasty
 colorscheme gruvbox
 let g:gruvbox_contrast_dark='medium'
+set background=dark
+
+if !has('win32')
+  hi Normal guibg=NONE ctermbg=NONE
+endif
 
 " highlight line under cursor
 set cursorline
