@@ -67,7 +67,7 @@ let g:coc_global_extensions = [
   \]
 
 " startify
-let g:startify_change_to_dir = 1
+let g:startify_change_to_dir = 0
 let g:startify_custom_header = [
   \'',
   \'',

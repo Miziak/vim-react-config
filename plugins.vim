@@ -8,7 +8,7 @@ call plug#begin()
   " Plug 'mhartington/oceanic-next'
   
   " yet another theme
-  Plug 'morhetz/gruvbox'
+  Plug 'gruvbox-community/gruvbox'
 
   " indent lines
   Plug 'Yggdroot/indentLine'
