@@ -49,12 +49,8 @@ map <leader>n :NERDTreeFind<CR>
 map <silent> <leader>m <C-w>o
 
 " restore <CR> keybinding in quickfix window overwritten by coc multicursors
+
 autocmd FileType qf nnoremap <buffer> <CR> <CR>
-
-" map keys for comfortable motion plugin
-nnoremap <silent> <C-d> :call comfortable_motion#flick(100)<CR>
-nnoremap <silent> <C-u> :call comfortable_motion#flick(-100)<CR>
-
 " fzf
 " fzf navigation
 autocmd FileType fzf tnoremap <buffer> <C-j> <down>

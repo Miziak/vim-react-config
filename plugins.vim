@@ -41,7 +41,7 @@ call plug#begin()
   Plug 'junegunn/fzf.vim'
 
   " plugin for 'smooth' scroll
-  Plug 'yuttie/comfortable-motion.vim'
+  Plug 'psliwka/vim-smoothie'
 
   " plugin provide powerful intellisense engine and language servers support
   Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}

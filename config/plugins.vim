@@ -66,7 +66,7 @@ let g:coc_global_extensions = [
   \]
 
 " startify
-let g:startify_change_to_dir = 0
+let g:startify_change_to_dir = 1
 let g:startify_custom_header = [
   \'',
   \'',
@@ -95,6 +95,18 @@ let g:startify_custom_header = [
   \'',
   \'',
   \]
+
+let g:startify_lists = [
+  \ { 'type': 'bookmarks', 'header': ['   Bookmarks'] },
+  \ { 'type': 'files', 'header': ['   MRU'] },
+  \ { 'type': 'dir', 'header': ['   MRU '. getcwd()] },
+  \ ]
+
+let dir = globpath('~/Dokumenty/WP', '*', 0, 1)
+call filter(dir, 'isdirectory(v:val)')
+call map(dir, {idx, val ->  {'b' . idx: val} })
+
+let g:startify_bookmarks = dir
 
 " vim-test
 let test#strategy = "neovim"
