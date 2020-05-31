@@ -10,6 +10,9 @@ call plug#begin()
   " yet another theme
   Plug 'morhetz/gruvbox'
 
+  " indent lines
+  Plug 'Yggdroot/indentLine'
+
   " plugin for programming languages support
   Plug 'sheerun/vim-polyglot'
 

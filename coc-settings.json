@@ -4,21 +4,14 @@
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
   "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "reason"],
   "diagnostic.errorSign": "##",
   "diagnostic.warningSign": "!!",
   "diagnostic.infoSign": "ii",
-  "languageserver": {
-    "reason": {
-      "command": "~/.rls-linux/reason-language-server",
-      "filetypes": ["reason"]
-    }
-  },
   "typescript.suggest.autoImports": true,
   "javascript.suggest.autoImports": true,
   "snippets.userSnippetsDirectory": "$XDG_CONFIG_HOME/nvim/snippets",
   "explorer.icon.enableNerdfont": true,
-  "explorer.buffer.columns": [],
   "explorer.keyMappings": {
     "s": "openInVsplit"
   }

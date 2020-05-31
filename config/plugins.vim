@@ -62,7 +62,8 @@ let g:coc_global_extensions = [
   \'coc-pairs',
   \'coc-snippets',
   \'coc-styled-components',
-  \'coc-emoji'
+  \'coc-emoji',
+  \'coc-reason'
   \]
 
 " startify
@@ -117,3 +118,6 @@ let test#javascript#jest#options = {
 
 " vim-quickscope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" nerdtree
+let NERDTreeIgnore = ['\.bs\.js$']

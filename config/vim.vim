@@ -3,6 +3,15 @@ if has("termguicolors")
     set termguicolors
 endif
 
+if exists("g:gui_dotnvim")
+  set guifont=FiraCode\ NF:h10
+endif
+
+if exists('g:fvim_loaded')
+  set guifont=FiraCode\ NF:h13
+  FVimUIPopupMenu v:false
+endif
+
 " enable syntax highlighting
 syntax enable
 " colorscheme vim-monokai-tasty
