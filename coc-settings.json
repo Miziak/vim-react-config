@@ -1,10 +1,20 @@
 {
   "suggest.echodocSupport": true,
-  "suggest.maxCompleteItemCount": 10,
   "eslint.enable": true,
   "prettier.eslintIntegration": true,
-  "eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "javascriptreact", "typescript", "typescriptreact", "reason"],
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "reason"
+  ],
   "diagnostic.errorSign": "##",
   "diagnostic.warningSign": "!!",
   "diagnostic.infoSign": "ii",
